@@ -26,6 +26,11 @@ class UserController extends Controller
         return 'Hello from UserController';
     }
 
+    public function create()
+    {
+        return view('user.create');
+    }
+
     public function show($id)
     {
         $data = ["data" => "data from database"];
