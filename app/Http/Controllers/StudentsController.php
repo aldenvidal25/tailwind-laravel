@@ -21,7 +21,7 @@ class StudentsController extends Controller
 
         // $data = DB::table('students')->select(DB::raw('count(*) as gender_count, gender'))->groupBy('gender')->get();
 
-        // $data = Students::where('id', 101)->firstOrFail()->get();
+        // $data = Students::where('id', 100)->firstOrFail()->get();
 
         return view('students.index', ['students' => $data]);
     }
