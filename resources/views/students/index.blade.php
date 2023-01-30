@@ -7,7 +7,7 @@
 <section class="mt-10">
     <div class="overflow-x-auto relative">
         <table class="w-full text-sm text-left text-gray-500">
-            <thead class="text-xs text gray-700 uppercase bg-gray-50">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                 <tr>
                     <th scope="col" class="py-3 px-6">First Name</th>
                     <th scope="col" class="py-3 px-6">Last Name</th>
@@ -28,15 +28,4 @@
 
     </div>
 </section>
-
-
-
-
-
-{{-- @php
- print_r($students);   
-@endphp --}}
-
-{{-- @foreach ($students as $student)
-{{ $student['first_name'] }}
-@endforeach --}}
+@include('partials.footer')
