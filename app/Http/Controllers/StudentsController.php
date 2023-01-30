@@ -23,7 +23,7 @@ class StudentsController extends Controller
 
         // $data = Students::where('id', 100)->firstOrFail()->get();
 
-        return view('students.index', ['students' => $data]);
+        return view('students.index');
     }
 
     // public function show($id)

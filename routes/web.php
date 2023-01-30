@@ -99,10 +99,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/user/{id}');
 //pag di authenticated bawal ma access, using middleware
 // Route::get('/user/{id}', [UserController::class, 'show'])->middleware('auth');
-Route::get('/', function () {
-    return view('index');
-});
-
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/', [StudentsController::class, 'index']);
 Route::get('/register', [UserController::class, 'register']);
 
 Route::get('/login', [UserController::class, 'login']);
