@@ -6,6 +6,9 @@
 
 
 </header>    
-
+<main class="bg-white max-w-lg mx-auto p-8 my-10 rounded-lg shadow-2x1">
+    <section>
+        <h3 class="font-bold text-2x1 text-center">Welcome To Student System</h3>
+    </section>
 
 @include('partials.footer')
