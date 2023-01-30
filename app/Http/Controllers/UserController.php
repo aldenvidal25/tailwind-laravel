@@ -38,6 +38,11 @@ class UserController extends Controller
         // return view('user.login');
     }
 
+    public function register()
+    {
+        return view('user.register');
+    }
+
     public function show($id)
     {
         $data = ["data" => "data from database"];

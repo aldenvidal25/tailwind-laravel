@@ -102,7 +102,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/register', [UserController::class, 'register']);
+
 Route::get('/login', [UserController::class, 'login']);
+
+
 
 // Route::get('/', [StudentsController::class, 'index']);
 
