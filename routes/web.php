@@ -102,18 +102,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/login', [UserController::class, 'login']);
 
-Route::get('/login', [UserController::class, 'create']);
+// Route::get('/', [StudentsController::class, 'index']);
 
-Route::get('/', [StudentsController::class, 'index']);
+// Route::get('/users', [UserController::class, 'index'])->name('login');
 
-Route::get('/users', [UserController::class, 'index'])->name('login');
+// Route::get('/user/{id}', [UserController::class, 'show']);
 
-Route::get('/user/{id}', [UserController::class, 'show']);
+// Route::get('/students', [StudentsController::class, 'index']);
 
-Route::get('/students', [StudentsController::class, 'index']);
-
-Route::get('/students/{id}', [StudentsController::class, 'show']);
+// Route::get('/students/{id}', [StudentsController::class, 'show']);
 
 // Route::get('/students', function () {
 //     return view('index');

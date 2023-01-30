@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 // use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 // public function show($id)
 // {
@@ -26,9 +27,15 @@ class UserController extends Controller
         return 'Hello from UserController';
     }
 
-    public function create()
+    public function login()
     {
-        return view('user.create');
+        if (View::exists('user.login')) {
+            return view('user.login');
+        } else {
+            return abort(404);
+            // return response()->view('errors.404);
+        }
+        // return view('user.login');
     }
 
     public function show($id)
