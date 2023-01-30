@@ -106,3 +106,5 @@ Route::get('/users', [UserController::class, 'index'])->name('login');
 Route::get('/user/{id}', [UserController::class, 'show']);
 
 Route::get('/students', [StudentsController::class, 'index']);
+
+Route::get('/students/{id}', [StudentsController::class, 'show']);

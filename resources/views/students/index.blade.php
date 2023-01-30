@@ -9,7 +9,8 @@
 <body>
     <ul>
         @foreach ($students as $student)
-        <li>{{ $student-> first_name }} {{ $student-> last_name }} {{ $student-> age }}</li>
+        <li>{{ $student-> first_name }} {{ $student-> last_name }}  {{ $student-> age }} {{ $student-> gender }}</li>
+        {{-- <li>{{ $student-> gender }} {{ $student-> gender_count }}</li> --}}
         @endforeach
     </ul>
 </body>
